@@ -31,7 +31,11 @@ namespace Various_testing
         const int x21 = 6;
         static void Main(string[] args)
         {
+            Methods.CheckDelegates();
+            Console.WriteLine();
+
             Methods.UnderstandInterfaces();
+            Console.WriteLine();
 
             Table table1 = new Table(4);
             Table table2 = new Table(6);

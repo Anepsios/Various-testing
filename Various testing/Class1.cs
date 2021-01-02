@@ -61,5 +61,22 @@ namespace Various_testing
             Console.WriteLine();
         }
 
+        public static void CheckDelegates()
+        {
+            myDelegate x = new myDelegate(delMethod);
+            x();
+            x = delegate () { Console.WriteLine("hey im anon delegate"); Console.WriteLine("Check me out"); };
+            x();
+            x = () => Console.WriteLine("Im lamdamale"); Console.WriteLine("in two lines"); ;
+            x();
+            lamdacheck y = (a, b, c) => { int result = a + b + c; Console.WriteLine("hmmm"); return result; };
+            Console.WriteLine(y(1, 2, 3));
+        }
+        delegate int lamdacheck(int a, int b, int c);
+        delegate void myDelegate();
+        private static void delMethod()
+        {
+            Console.WriteLine("hey im a delmethod");
+        }
     }
 }
