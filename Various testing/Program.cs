@@ -8,6 +8,10 @@ namespace Various_testing
 {
     class Program
     {
+        enum Color
+        {
+            Red, Orange, Yellow, Green, Blue, Indigo, Violet
+        }
         enum Season
         {
             Spring = 6,
@@ -31,6 +35,8 @@ namespace Various_testing
         const int x21 = 6;
         static void Main(string[] args)
         {
+            Console.WriteLine("how % works " + 4 % 5);
+
             Methods.CheckDelegates();
             Console.WriteLine();
 

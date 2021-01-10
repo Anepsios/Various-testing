@@ -69,6 +69,8 @@ namespace Various_testing
             x();
             x = () => Console.WriteLine("Im lamdamale"); Console.WriteLine("in two lines"); ;
             x();
+            lamdacheck yi = (a, b, c) => a + b + c;
+            int yo = yi(1, 2, 3);
             lamdacheck y = (a, b, c) => { int result = a + b + c; Console.WriteLine("hmmm"); return result; };
             Console.WriteLine(y(1, 2, 3));
         }
