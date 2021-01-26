@@ -35,6 +35,16 @@ namespace Various_testing
         const int x21 = 6;
         static void Main(string[] args)
         {
+            Console.WriteLine("Testing labels and gotos");
+            Start:
+            Console.WriteLine("Start");
+            goto End;
+            Middle:
+            Console.WriteLine("Middle");
+            End:
+            Console.WriteLine("End");
+            Console.WriteLine();
+
             Console.WriteLine("how % works " + 4 % 5);
 
             Methods.CheckDelegates();
