@@ -35,6 +35,18 @@ namespace Various_testing
         const int x21 = 6;
         static void Main(string[] args)
         {
+            var c1 = new Card();
+            c1.a = 3;
+            var c = c1;
+            c.a = 2;
+            Console.WriteLine(c1.a);
+            c1.a = 3;
+            c = new Card();
+            c.a = 1;
+            Console.WriteLine(c1.a);
+            Console.WriteLine();
+
+
             Console.WriteLine("Testing labels and gotos");
             Start:
             Console.WriteLine("Start");
