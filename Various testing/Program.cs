@@ -35,6 +35,18 @@ namespace Various_testing
         const int x21 = 6;
         static void Main(string[] args)
         {
+            var card1 = new Card();
+            var card2 = new Card();
+            card2.a = card1.a;
+            card1.a = 5;
+            Console.WriteLine(card2.a);
+            card1.c = new Card();
+            card2.c = card1.c;
+            card1.c.a = 15;
+            Console.WriteLine(card2.c.a);
+            Console.WriteLine();
+
+
             var c1 = new Card();
             c1.a = 3;
             var c = c1;

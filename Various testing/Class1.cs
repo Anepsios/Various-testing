@@ -55,6 +55,7 @@ namespace Various_testing
     public class Card
     {
         public int a { get; set; }
+        public Card c { get; set; }
         public Card()
         {
             a = 0;
